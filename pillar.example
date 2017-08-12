@@ -11,6 +11,8 @@ mongodb:
   mongodb_user: mongodb
   mongodb_group: mongodb
   mongod: mongod
+  mongodb_admin_user: admin
+  mongodb_admin_password: password
   conf_path: /etc/mongod.conf
   log_path: /mongodb/log
   db_path: /mongodb/data
@@ -51,7 +53,7 @@ mongodb:
 ## Use this for MongoDB 3.0 on Ubuntu
 # mongodb:
 #   version: 3.0
-#   keyid: 7F0CEB10 
+#   keyid: 7F0CEB10
 
 ## MongoDB query router configuration
 mongos:
