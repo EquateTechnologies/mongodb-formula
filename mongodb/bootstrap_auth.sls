@@ -9,10 +9,10 @@ auth_config:
     - group: root
     - mode: 0600
     - context:
-      root_user: {{ root_user }}
-      root_password: {{ root_password }}
-      admin_user: {{ admin_user }}
-      admin_password: {{ admin_password }}
+      root_user: {{ salt['pillar.get']('mongodb:root_user', '') }}
+      root_password: {{ salt['pillar.get']('mongodb:root_password', '') }}
+      admin_user: {{ salt['pillar.get']('mongodb:admin_user', '') }}
+      admin_password: {{ salt['pillar.get']('mongodb:admin_password', '') }}
 
 use_auth_config:
   cmd.run:

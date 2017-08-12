@@ -10,9 +10,9 @@ mongodb-users-pymongo-check:
   - name: {{ account.username }}
   - passwd: {{ account.password }}
   - database: {{ account.database }}
-{% if 'mongodb_admin_user' in mdb and 'mongodb_admin_password' in mdb %}
-  - user: {{ mdb.mongodb_admin_user }}
-  - password: {{ mdb.mongodb_admin_password }}
+{% if 'admin_user' in mdb and 'admin_password' in mdb %}
+  - user: {{ mdb.admin_user }}
+  - password: {{ mdb.admin_password }}
 {% endif %}
 {% if 'roles' in account %}
   - roles:
