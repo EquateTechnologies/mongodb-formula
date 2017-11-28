@@ -1,4 +1,4 @@
-{% if salt['pillar.get']('mongodb:mongodb_root_user', '') != '' and salt['pillar.get']('mongodb:mongodb_root_password', '') != '' and salt['pillar.get']('mongodb:mongodb_admin_user', '') != '' and salt['pillar.get']('mongodb:mongodb_admin_password', '') != '' %}
+{% if salt['pillar.get']('mongodb:root_user', '') != '' and salt['pillar.get']('mongodb:root_password', '') != '' and salt['pillar.get']('mongodb:admin_user', '') != '' and salt['pillar.get']('mongodb:admin_password', '') != '' %}
 
 auth_config:
   file.managed:
