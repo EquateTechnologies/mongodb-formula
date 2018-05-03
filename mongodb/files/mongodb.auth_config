@@ -1,4 +1,4 @@
 use admin
 db.createUser({user:"{{ root_user }}",  pwd:"{{ root_password }}", roles:[{role:"root", db:"admin"}]})
 db.createUser({user:"{{ admin_user }}", pwd:"{{ admin_password }}",     roles:[{role:"userAdminAnyDatabase", db:"admin"}]})
-qiot()
+quit()
